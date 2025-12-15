@@ -156,7 +156,11 @@ body {
 }
 
 .list-simple li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.5rem; /* Default spacing */
+}
+
+.list-simple li:last-child {
+    margin-bottom: 0; /* No margin after the last item */
 }
 
 /* MAIN CONTENT STYLES */
