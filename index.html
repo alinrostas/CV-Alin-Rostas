@@ -4,7 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-i18n="title">Alin Rostas - UI/UX Designer & Frontend Developer</title>
-    
+    <meta name="description" content="Alin Rostas — Hybrid UI/UX Designer & Frontend Developer. Portfolio/CV showcasing design + frontend skills (Figma, HTML, CSS, JS). Live demo, contact and downloadable CV in multiple languages.">
+    <link rel="canonical" href="https://your-domain-or-github-pages.example/">
+
+    <!-- Open Graph / Social preview -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Alin Rostas — UI/UX Designer & Frontend Developer">
+    <meta property="og:description" content="Hybrid UI/UX Designer with frontend experience. View my CV, projects and contact details.">
+    <meta property="og:image" content="social-preview.svg">
+    <meta property="og:url" content="https://your-domain-or-github-pages.example/">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Alin Rostas — UI/UX Designer & Frontend Developer">
+    <meta name="twitter:description" content="Hybrid UI/UX Designer with frontend experience. View my CV, projects and contact details.">
+    <meta name="twitter:image" content="social-preview.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -37,7 +51,7 @@
                         </select>
                     </div>
 
-                    <a href="Alin_Rostas_CV.pdf" download="Alin_Rostas_CV.pdf" class="btn-download" id="btn-download" data-cv-ro="Alin_Rostas_CV.pdf" data-cv-en="Alin_Rostas_CV.pdf" data-cv-de="Alin_Rostas_CV.pdf">
+                    <a href="Alin_Rostas_CV_en.pdf" download="Alin_Rostas_CV_en.pdf" class="btn-download" id="btn-download" data-cv-ro="Alin_Rostas_CV_ro.pdf" data-cv-en="Alin_Rostas_CV_en.pdf" data-cv-de="Alin_Rostas_CV_de.pdf">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                             <polyline points="7 10 12 15 17 10"></polyline>
@@ -73,32 +87,40 @@
                     <div class="skill-category">
                         <h4 data-i18n="uiux">UI/UX Design</h4>
                         <div class="tags">
-                            <span class="tag">Figma</span>
-                            <span class="tag">Wireframing</span>
-                            <span class="tag">Prototyping</span>
-                            <span class="tag">User Research</span>
-                            <span class="tag">Design Systems</span>
+                            <span class="tag" data-skill="figma">Figma</span>
+                            <span class="tag" data-skill="wireframing">Wireframing</span>
+                            <span class="tag" data-skill="prototyping">Prototyping</span>
+                            <span class="tag" data-skill="user_research">User Research</span>
+                            <span class="tag" data-skill="design_systems">Design Systems</span>
                         </div>
                     </div>
 
                     <div class="skill-category">
                         <h4 data-i18n="frontend">Frontend Dev</h4>
                         <div class="tags">
-                            <span class="tag dev">HTML5</span>
-                            <span class="tag dev">CSS3 / SASS</span>
-                            <span class="tag dev">JavaScript</span>
-                            <span class="tag dev">Responsive Design</span>
+                            <span class="tag" data-skill="html5">HTML5</span>
+                            <span class="tag" data-skill="css3_sass">CSS3 / SASS</span>
+                            <span class="tag" data-skill="javascript">JavaScript</span>
+                            <span class="tag" data-skill="responsive_design">Responsive Design</span>
                         </div>
                     </div>
 
                     <div class="skill-category">
                         <h4 data-i18n="tools">Tools & Methodologies</h4>
-                        <ul class="list-simple">
-                            <li>Jira / Confluence</li>
-                            <li>Adobe Creative Suite</li>
-                            <li>Agile / Scrum</li>
-                            <li>Git</li>
-                        </ul>
+                        <div class="tags" aria-label="Tools and methodologies">
+                            <span class="tag" data-skill="jira_confluence">Jira / Confluence</span>
+                            <span class="tag" data-skill="adobe_cs">Adobe Creative Suite</span>
+                            <span class="tag" data-skill="agile_scrum">Agile / Scrum</span>
+                            <span class="tag" data-skill="git">Git</span>
+                        </div>
+                        <div class="tags" aria-label="Additional technical skills">
+                            <span class="tag" data-skill="it_support" data-i18n="skill_it_support">IT Support</span>
+                            <span class="tag" data-skill="active_directory" data-i18n="skill_active_directory">Active Directory</span>
+                            <span class="tag" data-skill="windows" data-i18n="skill_windows">Windows</span>
+                            <span class="tag" data-skill="linux" data-i18n="skill_linux">Linux</span>
+                            <span class="tag" data-skill="hardware" data-i18n="skill_hardware">Hardware</span>
+                            <span class="tag" data-skill="networking" data-i18n="skill_networking">Networking</span>
+                        </div>
                     </div>
                 </section>
 
@@ -161,13 +183,7 @@
                             <li data-i18n="job4_b2">Managed user accounts, diagnosed network issues, and maintained IT assets.</li>
                             <li data-i18n="job4_b3">Served as the first point of contact for technical incidents.</li>
                         </ul>
-                        <div class="tags" aria-hidden="true">
-                            <span class="tag">IT Support</span>
-                            <span class="tag">Active Directory</span>
-                            <span class="tag">Windows 10</span>
-                            <span class="tag">Hardware</span>
-                            <span class="tag">Networking</span>
-                        </div>
+                        <!-- Skill tags moved to sidebar for better discoverability -->
                     </article>
 
                     <article class="job">
@@ -192,6 +208,15 @@
         </footer>
     </div>
 
-    <script src="script.js"></script>
+    <script type="module" src="assets/js/main.js"></script>
+    <!-- Skill detail modal -->
+    <div id="skill-modal" class="skill-modal" aria-hidden="true" role="dialog" aria-modal="true">
+        <div class="skill-modal__backdrop" data-action="close"></div>
+        <div class="skill-modal__panel" role="document">
+            <button class="skill-modal__close" aria-label="Close" data-action="close">✕</button>
+            <h3 id="skill-modal-title"></h3>
+            <div id="skill-modal-body"></div>
+        </div>
+    </div>
 </body>
 </html>

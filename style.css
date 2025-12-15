@@ -130,17 +130,24 @@ body {
 }
 
 .tag {
-    font-size: 0.8rem;
-    background: #e0e7ff;
-    color: #3730a3;
-    padding: 0.25rem 0.6rem;
-    border-radius: 4px;
-    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.9rem;
+    background: #eef2ff; /* unified color for all skills */
+    color: #26333f;
+    padding: 0.35rem 0.75rem;
+    border-radius: 8px;
+    font-weight: 600;
+    line-height: 1;
+    border: 1px solid rgba(38, 51, 63, 0.06);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.02);
+    transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease;
 }
 
-.tag.dev {
-    background: #dcfce7;
-    color: #166534;
+.tag:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(2, 6, 23, 0.06);
 }
 
 .list-simple {
@@ -359,4 +366,48 @@ body {
         width: 100%; /* Pe mobil butonul ocupă toată lățimea */
         justify-content: center;
     }
+}
+
+/* --- Modal pentru skill details --- */
+.skill-modal {
+    position: fixed;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1200;
+}
+.skill-modal[aria-hidden="false"] {
+    display: flex;
+}
+.skill-modal__backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(2,6,23,0.5);
+}
+.skill-modal__panel {
+    position: relative;
+    background: white;
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    max-width: 640px;
+    width: calc(100% - 48px);
+    box-shadow: 0 20px 40px rgba(2,6,23,0.2);
+    z-index: 2;
+}
+.skill-modal__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+.skill-modal__panel h3 {
+    margin: 0 0 0.5rem 0;
+}
+.skill-modal__panel #skill-modal-body {
+    color: #334155;
+    font-size: 0.95rem;
 }
